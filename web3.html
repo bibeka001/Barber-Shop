@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grooming and Hairstyling Web Tutorials</title>
+    <link rel="stylesheet" href="../css/web3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Kaushan+Script&family=Licorice&family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,200;1,800&family=Island+Moments&family=Kaushan+Script&family=Licorice&family=Luxurious+Roman&family=Playfair+Display:ital,wght@1,500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="dude">
+      <img src="../shop1img/logo.png" class="logo" />
+      <div class="banner-text">
+        <h1>Hair Studio</h1>
+        <p>Nourish and Style your hair</p>
+        <div class="banner-btn">
+          <a href="#"><span></span>Find Out</a>
+          <a href="#"><span></span>Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">SERVICE</a></li>
+          <li><a href="#">TESTIMONIALS</a></li>
+          <li><a href="#">MEET US</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id=" menuBtn">
+      <img src="../shop1img/menu.jpg " id="menu" />
+      <img >
+    </div>
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var sideNav = document.getElementById("sideNav");
+      var menu = document.getElementById("menu");
+
+      sideNav.style.right = "-250px";
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0";
+          menu.src="../shop1img/close.png"
+        } else {
+          sideNav.style.right = "-250px";
+        }
+      };
+    </script>
+  </body>
+</html>
